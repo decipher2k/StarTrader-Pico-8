@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="1">
+  <game>
+    <name>SpaceTrader</name>
+    <author></author>
+    <cart>F:\SpaceTrader\spacetrader.p8</cart>
+  </game>
+  <entities>
+    <entity name="Notes" enabled="0">
+      <function name="ideas" enabled="0">ideas
+
+  1. 
+  2. </function>
+      <function name="todo" enabled="0">todo
+
+  1. 
+  2. </function>
+    </entity>
+    <entity name="Game" enabled="1">
+      <function name="globals" enabled="1">currentModule="starmap"
+currentSystem=""
+targetSystem=""
+health=0
+fuel=0
+credits=0
+
+starfield={["Alphekka"]={["name"]="Alphekka", ["x"]=40, ["y"]=438, connections={[0]="Acrux" ,[1]="Fomalhaut" ,[2]="Agena" }},["Bellatrix"]={["name"]="Bellatrix", ["x"]=16, ["y"]=123, connections={[0]="Betelgeuse" ,[1]="Procyon" }},["Acamar"]={["name"]="Acamar", ["x"]=143, ["y"]=331, connections={[0]="Hadar" ,[1]="Shedir" }},["Kruger 60"]={["name"]="Kruger 60", ["x"]=180, ["y"]=50, connections={[0]="Alpheratz" ,[1]="Kocab" ,[2]="Polaris" ,[3]="Mirphak" }},["Groombridge 1830"]={["name"]="Groombridge 1830", ["x"]=481, ["y"]=494, connections={[0]="Saiph" ,[1]="Alcor" }},["Enif"]={["name"]="Enif", ["x"]=354, ["y"]=501, connections={[0]="Etamin" }},["Proxima"]={["name"]="Proxima", ["x"]=296, ["y"]=505, connections={[0]="Alderamin" ,[1]="Etamin" }},["Barnard's star"]={["name"]="Barnard's star", ["x"]=1, ["y"]=349, connections={[0]="Arcturus" }},["Caph"]={["name"]="Caph", ["x"]=442, ["y"]=256, connections={[0]="Adhara" ,[1]="Sirius" ,[2]="Rasalhague" ,[3]="Alnath" }},["Alphard"]={["name"]="Alphard", ["x"]=50, ["y"]=214, connections={[0]="Alnilam" ,[1]="Vindemiatrix" ,[2]="Deneb" }},["Achernar"]={["name"]="Achernar", ["x"]=339, ["y"]=408, connections={[0]="Almaak" ,[1]="Zaurak" ,[2]="Red Rectangle" }},["Altair"]={["name"]="Altair", ["x"]=104, ["y"]=36, connections={[0]="Mizar" ,[1]="Alpheratz" ,[2]="Kocab" ,[3]="Cor Caroli" }},["Albireo"]={["name"]="Albireo", ["x"]=264, ["y"]=262, connections={[0]="Aldebaran" ,[1]="Sadalmelik" ,[2]="Sadalmelik" }},["Thuban"]={["name"]="Thuban", ["x"]=363, ["y"]=185, connections={[0]="Pollux" ,[1]="Sirius" }},["Menkar"]={["name"]="Menkar", ["x"]=458, ["y"]=441, connections={[0]="Van Maanen 2" ,[1]="Rigil Kent" ,[2]="Alcor" }},["Scheat"]={["name"]="Scheat", ["x"]=124, ["y"]=178, connections={[0]="Nihal" ,[1]="Spica" }},["Saiph"]={["name"]="Saiph", ["x"]=435, ["y"]=501, connections={[0]="Groombridge 1830" ,[1]="Van Maanen 2" ,[2]="Alcor" }},["Markab"]={["name"]="Markab", ["x"]=188, ["y"]=268, connections={[0]="Sadalmelik" ,[1]="Mira" }},["Alioth"]={["name"]="Alioth", ["x"]=120, ["y"]=457, connections={[0]="Algieba" ,[1]="Regulus" ,[2]="Rasalgethi" }},["Alnair"]={["name"]="Alnair", ["x"]=321, ["y"]=261, connections={[0]="Izar" ,[1]="Algol" ,[2]="Aldebaran" }},["Alnilam"]={["name"]="Alnilam", ["x"]=75, ["y"]=250, connections={[0]="Alphard" ,[1]="Capella" ,[2]="Kaus Australis" }},["Sadalmelik"]={["name"]="Sadalmelik", ["x"]=214, ["y"]=258, connections={[0]="Markab" ,[1]="Mira" ,[2]="Albireo" ,[3]="Albireo" }},["Alhena"]={["name"]="Alhena", ["x"]=276, ["y"]=121, connections={[0]="Alcyone" ,[1]="Tarazed" ,[2]="Cyg X-1" }},["Pollux"]={["name"]="Pollux", ["x"]=327, ["y"]=162, connections={[0]="Thuban" ,[1]="Pleione" }},["Mirach"]={["name"]="Mirach", ["x"]=145, ["y"]=114, connections={[0]="Kocab" ,[1]="Ankaa" ,[2]="Polaris" ,[3]="Alnitak" }},["Phad"]={["name"]="Phad", ["x"]=276, ["y"]=364, connections={[0]="Kapteyn's star" }},["Mizar"]={["name"]="Mizar", ["x"]=63, ["y"]=32, connections={[0]="Altair" ,[1]="Betelgeuse" ,[2]="Alshain" }},["Alpheratz"]={["name"]="Alpheratz", ["x"]=139, ["y"]=34, connections={[0]="Kruger 60" ,[1]="Altair" ,[2]="Kocab" ,[3]="Cor Caroli" }},["Nunki"]={["name"]="Nunki", ["x"]=505, ["y"]=245, connections={[0]="Rasalhague" ,[1]="Alnath" }},["Izar"]={["name"]="Izar", ["x"]=288, ["y"]=212, connections={[0]="Alnair" }},["Kocab"]={["name"]="Kocab", ["x"]=136, ["y"]=68, connections={[0]="Kruger 60" ,[1]="Altair" ,[2]="Mirach" ,[3]="Alpheratz" ,[4]="Polaris" ,[5]="Alnitak" }},["Acrux"]={["name"]="Acrux", ["x"]=4, ["y"]=470, connections={[0]="Alphekka" ,[1]="Babcock's star" ,[2]="Fomalhaut" }},["Vega"]={["name"]="Vega", ["x"]=183, ["y"]=498, connections={[0]="Algieba" }},["Ankaa"]={["name"]="Ankaa", ["x"]=176, ["y"]=163, connections={[0]="Mirach" ,[1]="Campbell's star" ,[2]="Nihal" ,[3]="Spica" }},["Vindemiatrix"]={["name"]="Vindemiatrix", ["x"]=18, ["y"]=242, connections={[0]="Alphard" ,[1]="Capella" }},["Alcyone"]={["name"]="Alcyone", ["x"]=294, ["y"]=83, connections={[0]="Alhena" ,[1]="Mintaka" ,[2]="Cyg X-1" }},["Shedir"]={["name"]="Shedir", ["x"]=100, ["y"]=382, connections={[0]="Regulus" ,[1]="Agena" ,[2]="Acamar" }},["Betelgeuse"]={["name"]="Betelgeuse", ["x"]=49, ["y"]=77, connections={[0]="Bellatrix" ,[1]="Mizar" ,[2]="Procyon" }},["Dubhe"]={["name"]="Dubhe", ["x"]=448, ["y"]=165, connections={[0]="Unukalhai" ,[1]="Hamal" ,[2]="3C 273" }},["Babcock's star"]={["name"]="Babcock's star", ["x"]=36, ["y"]=510, connections={[0]="Acrux" ,[1]="Canopus" }},["Alshain"]={["name"]="Alshain", ["x"]=38, ["y"]=7, connections={[0]="Mizar" }},["Castor"]={["name"]="Castor", ["x"]=381, ["y"]=22, connections={[0]="Denebola" ,[1]="Shaula" }},["Fomalhaut"]={["name"]="Fomalhaut", ["x"]=19, ["y"]=442, connections={[0]="Alphekka" ,[1]="Acrux" }},["Canopus"]={["name"]="Canopus", ["x"]=68, ["y"]=510, connections={[0]="Babcock's star" }},["Adhara"]={["name"]="Adhara", ["x"]=411, ["y"]=275, connections={[0]="Caph" ,[1]="Luyten's star" ,[2]="Alnath" ,[3]="Arneb" }},["Luyten's star"]={["name"]="Luyten's star", ["x"]=382, ["y"]=317, connections={[0]="Adhara" ,[1]="Algol" ,[2]="Red Rectangle" ,[3]="Red Rectangle" }},["Diphda"]={["name"]="Diphda", ["x"]=506, ["y"]=170, connections={[0]="Hamal" }},["Polaris"]={["name"]="Polaris", ["x"]=154, ["y"]=88, connections={[0]="Kruger 60" ,[1]="Mirach" ,[2]="Kocab" ,[3]="Mirphak" ,[4]="Alnitak" }},["Antares"]={["name"]="Antares", ["x"]=489, ["y"]=88, connections={[0]="Rigel" }},["Mirphak"]={["name"]="Mirphak", ["x"]=200, ["y"]=78, connections={[0]="Kruger 60" ,[1]="Polaris" ,[2]="Cyg X-1" }},["Pleione"]={["name"]="Pleione", ["x"]=359, ["y"]=119, connections={[0]="Pollux" ,[1]="3C 273" }},["Procyon"]={["name"]="Procyon", ["x"]=50, ["y"]=107, connections={[0]="Bellatrix" ,[1]="Betelgeuse" ,[2]="Algenib" }},["Megrez"]={["name"]="Megrez", ["x"]=469, ["y"]=367, connections={[0]="Sheliak" }},["Sirius"]={["name"]="Sirius", ["x"]=398, ["y"]=212, connections={[0]="Caph" ,[1]="Thuban" ,[2]="Arneb" }},["Unukalhai"]={["name"]="Unukalhai", ["x"]=415, ["y"]=162, connections={[0]="Dubhe" ,[1]="3C 273" }},["Rasalhague"]={["name"]="Rasalhague", ["x"]=480, ["y"]=233, connections={[0]="Caph" ,[1]="Nunki" ,[2]="Alnath" }},["Campbell's star"]={["name"]="Campbell's star", ["x"]=205, ["y"]=150, connections={[0]="Ankaa" ,[1]="Spica" ,[2]="Cyg X-1" }},["Nihal"]={["name"]="Nihal", ["x"]=144, ["y"]=172, connections={[0]="Scheat" ,[1]="Ankaa" ,[2]="Spica" }},["Denebola"]={["name"]="Denebola", ["x"]=395, ["y"]=48, connections={[0]="Castor" ,[1]="Shaula" }},["Capella"]={["name"]="Capella", ["x"]=46, ["y"]=268, connections={[0]="Alnilam" ,[1]="Vindemiatrix" ,[2]="Kaus Australis" }},["Alderamin"]={["name"]="Alderamin", ["x"]=282, ["y"]=474, connections={[0]="Proxima" ,[1]="Zaurak" }},["Van Maanen 2"]={["name"]="Van Maanen 2", ["x"]=418, ["y"]=471, connections={[0]="Menkar" ,[1]="Saiph" ,[2]="Alcor" }},["Algieba"]={["name"]="Algieba", ["x"]=139, ["y"]=484, connections={[0]="Alioth" ,[1]="Vega" ,[2]="Rasalgethi" }},["Merak"]={["name"]="Merak", ["x"]=163, ["y"]=405, connections={[0]="Regulus" ,[1]="Alkaid" }},["Alnath"]={["name"]="Alnath", ["x"]=459, ["y"]=227, connections={[0]="Caph" ,[1]="Nunki" ,[2]="Adhara" ,[3]="Rasalhague" }},["Almaak"]={["name"]="Almaak", ["x"]=360, ["y"]=416, connections={[0]="Achernar" ,[1]="Zaurak" ,[2]="Red Rectangle" ,[3]="Rigil Kent" ,[4]="Rigil Kent" }},["Hadar"]={["name"]="Hadar", ["x"]=100, ["y"]=307, connections={[0]="Acamar" ,[1]="Kaus Australis" }},["Alnitak"]={["name"]="Alnitak", ["x"]=121, ["y"]=107, connections={[0]="Mirach" ,[1]="Kocab" ,[2]="Polaris" }},["Mira"]={["name"]="Mira", ["x"]=192, ["y"]=243, connections={[0]="Markab" ,[1]="Sadalmelik" ,[2]="Spica" }},["Regulus"]={["name"]="Regulus", ["x"]=117, ["y"]=409, connections={[0]="Alioth" ,[1]="Shedir" ,[2]="Merak" ,[3]="Agena" ,[4]="Rasalgethi" }},["Rigil Kent"]={["name"]="Rigil Kent", ["x"]=421, ["y"]=420, connections={[0]="Menkar" ,[1]="Alcor" ,[2]="Sheliak" ,[3]="Almaak" ,[4]="Almaak" }},["Hamal"]={["name"]="Hamal", ["x"]=471, ["y"]=152, connections={[0]="Dubhe" ,[1]="Diphda" ,[2]="Rigel" }},["Shaula"]={["name"]="Shaula", ["x"]=426, ["y"]=66, connections={[0]="Castor" ,[1]="Denebola" ,[2]="3C 273" }},["Deneb"]={["name"]="Deneb", ["x"]=25, ["y"]=186, connections={[0]="Alphard" ,[1]="Algenib" }},["Zaurak"]={["name"]="Zaurak", ["x"]=315, ["y"]=432, connections={[0]="Achernar" ,[1]="Alderamin" ,[2]="Almaak" ,[3]="Etamin" }},["Spica"]={["name"]="Spica", ["x"]=172, ["y"]=188, connections={[0]="Scheat" ,[1]="Ankaa" ,[2]="Campbell's star" ,[3]="Nihal" ,[4]="Mira" }},["Algol"]={["name"]="Algol", ["x"]=347, ["y"]=294, connections={[0]="Alnair" ,[1]="Luyten's star" ,[2]="Kapteyn's star" ,[3]="Arneb" }},["Alkaid"]={["name"]="Alkaid", ["x"]=192, ["y"]=388, connections={[0]="Merak" }},["Cor Caroli"]={["name"]="Cor Caroli", ["x"]=129, ["y"]=4, connections={[0]="Altair" ,[1]="Alpheratz" }},["Tarazed"]={["name"]="Tarazed", ["x"]=264, ["y"]=155, connections={[0]="Alhena" ,[1]="Cyg X-1" }},["Agena"]={["name"]="Agena", ["x"]=73, ["y"]=389, connections={[0]="Alphekka" ,[1]="Shedir" ,[2]="Regulus" ,[3]="Rasalgethi" ,[4]="Arcturus" }},["Mintaka"]={["name"]="Mintaka", ["x"]=263, ["y"]=40, connections={[0]="Alcyone" }},["Red Rectangle"]={["name"]="Red Rectangle", ["x"]=349, ["y"]=376, connections={[0]="Achernar" ,[1]="Almaak" ,[2]="Luyten's star" ,[3]="Luyten's star" }},["Rasalgethi"]={["name"]="Rasalgethi", ["x"]=92, ["y"]=438, connections={[0]="Alioth" ,[1]="Algieba" ,[2]="Regulus" ,[3]="Agena" }},["Rigel"]={["name"]="Rigel", ["x"]=496, ["y"]=112, connections={[0]="Antares" ,[1]="Hamal" }},["Alcor"]={["name"]="Alcor", ["x"]=438, ["y"]=461, connections={[0]="Groombridge 1830" ,[1]="Menkar" ,[2]="Saiph" ,[3]="Van Maanen 2" ,[4]="Rigil Kent" }},["Arcturus"]={["name"]="Arcturus", ["x"]=30, ["y"]=385, connections={[0]="Barnard's star" ,[1]="Agena" }},["Kapteyn's star"]={["name"]="Kapteyn's star", ["x"]=298, ["y"]=318, connections={[0]="Phad" ,[1]="Algol" ,[2]="Aldebaran" }},["Aldebaran"]={["name"]="Aldebaran", ["x"]=283, ["y"]=294, connections={[0]="Albireo" ,[1]="Alnair" ,[2]="Kapteyn's star" }},["Algenib"]={["name"]="Algenib", ["x"]=67, ["y"]=152, connections={[0]="Procyon" ,[1]="Deneb" }},["Cyg X-1"]={["name"]="Cyg X-1", ["x"]=248, ["y"]=123, connections={[0]="Alhena" ,[1]="Alcyone" ,[2]="Mirphak" ,[3]="Campbell's star" ,[4]="Tarazed" }},["Sheliak"]={["name"]="Sheliak", ["x"]=441, ["y"]=389, connections={[0]="Megrez" ,[1]="Rigil Kent" }},["Kaus Australis"]={["name"]="Kaus Australis", ["x"]=79, ["y"]=299, connections={[0]="Alnilam" ,[1]="Capella" ,[2]="Hadar" }},["Etamin"]={["name"]="Etamin", ["x"]=341, ["y"]=479, connections={[0]="Enif" ,[1]="Proxima" ,[2]="Zaurak" }},["Arneb"]={["name"]="Arneb", ["x"]=384, ["y"]=247, connections={[0]="Adhara" ,[1]="Sirius" ,[2]="Algol" }},["3C 273"]={["name"]="3C 273", ["x"]=399, ["y"]=124, connections={[0]="Dubhe" ,[1]="Pleione" ,[2]="Unukalhai" ,[3]="Shaula" }}}
+
+</function>
+      <function name="_init" enabled="1">function _init()
+end</function>
+      <function name="_update" enabled="1">function _update()
+   cls(0)
+   if(currentModule=="starmap") then
+     updateStarmap()
+   elseif(currentModule=="fighting") then
+     updateFighting()
+   elseif(currentModule=="solarsystem") then
+     updateSolarSystem()
+   elseif(currentModule=="asteroidmining") then
+     updateAsteroidMining()
+   elseif(currentModule=="starbase") then
+     updateStarbase()
+   elseif(currentModule=="market") then
+     updateMarket()
+   elseif(currentModule=="planet") then
+     updatePlanet()
+   elseif(currentModule=="city") then
+     updateCity()
+   elseif(currentModule=="quests") then
+     updateQuests()
+   end     
+end</function>
+      <function name="_draw" enabled="1">function _draw()
+   if(currentModule=="starmap") then
+     drawStarmap()
+   elseif(currentModule=="fighting") then
+     drawFighting()
+   elseif(currentModule=="solarsystem") then
+     drawSolarSystem()
+   elseif(currentModule=="asteroidmining") then
+     drawAsteroidMining()
+   elseif(currentModule=="starbase") then
+     drawStarbase()
+   elseif(currentModule=="market") then
+     drawMarket()
+   elseif(currentModule=="planet") then
+     drawPlanet()
+   elseif(currentModule=="city") then
+     drawCity()
+   elseif(currentModule=="quests") then
+     drawQuests()
+   end
+end</function>
+    </entity>
+    <entity name="Globals" enabled="1">
+      <function name="update" enabled="1">function updEntity()
+end</function>
+      <function name="draw" enabled="1">function drwEntity()
+end</function>
+    </entity>
+    <entity name="Starmap" enabled="1">
+      <function name="drawStarmap" enabled="1">function drawStarmap()
+end</function>
+      <function name="updateStarmap" enabled="1">function updateStarmap()
+end</function>
+    </entity>
+    <entity name="Fighting" enabled="1">
+      <function name="update" enabled="1">function updateFighting()
+end</function>
+      <function name="draw" enabled="1">function drawFighting()
+end</function>
+    </entity>
+    <entity name="SolarSystem" enabled="1">
+      <function name="update" enabled="1">function updateSolarSystem()
+end</function>
+      <function name="draw" enabled="1">function drawSolarSystem()
+end</function>
+    </entity>
+    <entity name="AsteroidMining" enabled="1">
+      <function name="update" enabled="1">function updateAsteroidMining()
+end</function>
+      <function name="draw" enabled="1">function drawAsteroidMining()
+end</function>
+    </entity>
+    <entity name="Starbase" enabled="1">
+      <function name="update" enabled="1">function updateStarbase()
+end</function>
+      <function name="draw" enabled="1">function drawStarbase()
+end</function>
+    </entity>
+    <entity name="Market" enabled="1">
+      <function name="update" enabled="1">function updateMarket()
+end</function>
+      <function name="draw" enabled="1">function drawMarket()
+end</function>
+    </entity>
+    <entity name="Planet" enabled="1">
+      <function name="update" enabled="1">function updatePlanet()
+end</function>
+      <function name="draw" enabled="1">function drawPlanet()
+end</function>
+    </entity>
+    <entity name="City" enabled="1">
+      <function name="update" enabled="1">function updateCity()
+end</function>
+      <function name="draw" enabled="1">function drawCity()
+end</function>
+    </entity>
+    <entity name="Quests" enabled="1">
+      <function name="update" enabled="1">function updateQuests()
+end</function>
+      <function name="draw" enabled="1">function drawQuests()
+end</function>
+    </entity>
+  </entities>
+</project>
